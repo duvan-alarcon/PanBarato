@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <EditText
+        android:id="@+id/eCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/correo"
+        app:layout_constraintBottom_toTopOf="@+id/ePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/contrasena"
+        app:layout_constraintBottom_toTopOf="@+id/eRepPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eCorreo" />
+
+    <EditText
+        android:id="@+id/eRepPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/repContrasena"
+        app:layout_constraintBottom_toTopOf="@+id/bRegistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ePassword" />
+
+    <Button
+        android:id="@+id/bRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/registrarse"
+        android:textAllCaps="false"
+        android:onClick="registrarseClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eRepPassword" />
+</android.support.constraint.ConstraintLayout>

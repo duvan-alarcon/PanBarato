@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PanBarato</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="repContrasena">Repetir Contraseña</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="splashPict">Splashing</string>
+    <string name="panBarato">PanBarato</string>
+    <string name="tcontenido">tcontenido</string>
+    <string name="icontenido">icontenido</string>
+    <string name="tpresentacion">¿Que es Pan Barato?</string>
+    <string name="isplash">isplash</string>
+    <string name="descripcion">Pan Barato es la aplicacion que te permitira
+        salvar al planeta al evitar el desperdicio de la comida y la optimizacion
+        de nuestros recursos naturales </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
+
+</resources>
