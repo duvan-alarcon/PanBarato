@@ -9,9 +9,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class Main2Activity extends AppCompatActivity {
     private String correo, password;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +46,18 @@ public class Main2Activity extends AppCompatActivity {
             i.putExtra("password", password);
             startActivity(i);
 
+
+
         }else {
             finish();
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 }
 

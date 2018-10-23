@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iGeneral"
+        android:icon="@drawable/fastfood"
+        android:title="@string/general" />
+
+    <item
+        android:id="@+id/iBuscar"
+        android:icon="@drawable/searching"
+        android:title="@string/buscar" />
+
+    <item
+        android:id="@+id/iNotificaciones"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/notificaciones" />
+
+    <item
+        android:id="@+id/iPerfil"
+        android:icon="@drawable/person"
+        android:title="@string/perfil" />
+
+</menu>

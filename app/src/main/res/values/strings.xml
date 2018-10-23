@@ -18,5 +18,36 @@
         de nuestros recursos naturales </string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_perfil">PerfilActivity</string>
+    <string name="tsplash">tsplash</string>
+    <string name="Pan">pan_barato</string>
+    <string name="pan">Pan Barato</string>
+    <string name="tperfil">Informacion Personal</string>
+    <string name="tcorreo">correo</string>
+    <string name="mostrar">Mostrar Info</string>
+    <string name="title_activity_main_navigation">MainActivityNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="general">Pan-Pastel</string>
+    <string name="buscar">Buscar</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="perfil">Perfil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_general_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tbuscar">Fragment Buscar</string>
+    <string name="tgeneral">Fragment General</string>
+    <string name="tnotificacion">Fragmento Notificaciones</string>
+    <string name="tprofile">Fragmento Perfil</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mapa">Mapa</string>
+    <string name="Rname">Nombre</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Direccion</string>
+    <string name="description">Descripcion</string>
+
 
 </resources>

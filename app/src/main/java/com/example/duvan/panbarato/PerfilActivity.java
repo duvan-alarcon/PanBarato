@@ -10,16 +10,29 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class PerfilActivity extends AppCompatActivity {
     private String correo, password;
+    private EditText tcorreo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        Bundle args = getIntent().getExtras();
+        if (args !=null){
+            correo = args.getString("correo");
+            password = args.getString("password");
+
+        }
+
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) { //asignar el menu
         getMenuInflater().inflate(R.menu.menu2, menu);
@@ -32,14 +45,21 @@ public class PerfilActivity extends AppCompatActivity {
 
 
         if (id == R.id.mPrincipal){
-            Intent i= new Intent(PerfilActivity.this, Main2Activity.class);
-            startActivity(i);
+            onBackPressed();
 
         }else {
             finish();
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void mostrar(View view) {
+        //correo = getString("correo");
+        tcorreo.setText(correo);
+        
+
     }
 }
 

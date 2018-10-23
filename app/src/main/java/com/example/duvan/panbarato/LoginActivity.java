@@ -38,10 +38,11 @@ public class LoginActivity extends AppCompatActivity {
     public void LoginClicked(View view) {
         if (eCorreo.getText().toString().equals(correo) && ePassword.getText().toString().equals(password)){
             Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show();
-            Intent i= new Intent(LoginActivity.this, Main2Activity.class);
+            Intent i= new Intent(LoginActivity.this, MainActivityNavigation.class);
             i.putExtra("correo", correo);
             i.putExtra("password", password);
             startActivity(i);
+            finish();
         } else{
             Toast.makeText(this, "correo o contrasena incorrectas", Toast.LENGTH_SHORT).show();
         }
