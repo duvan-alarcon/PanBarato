@@ -9,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivityNavigation extends AppCompatActivity {
 
 
@@ -62,6 +65,10 @@ public class MainActivityNavigation extends AppCompatActivity {
 
         GeneralFragment generalFragment= new GeneralFragment();
         fragmentTransaction.add(android.R.id.content, generalFragment).commit();
+
+
+
+
     }
 
 }

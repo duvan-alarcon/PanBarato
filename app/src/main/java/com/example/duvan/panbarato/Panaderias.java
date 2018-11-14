@@ -4,12 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Panaderias {
-    String name, description, adres;
+    String id, name, description, adres, ciudad;
 
-    public Panaderias(String name, String description, String adres) {
+    public Panaderias() {
+    }
+
+    public Panaderias(String id, String name, String description, String adres, String ciudad) {
+        this.id= id;
         this.name = name;
         this.description = description;
         this.adres = adres;
+        this.ciudad = ciudad;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
     public String getName() {
@@ -36,20 +57,6 @@ public class Panaderias {
         this.adres = adres;
     }
 
-    public List<Panaderias> getPanaderias() {
-        return panaderiasArrayList;
-    }
 
-    public void setPanaderias(List<Panaderias> panaderias) {
-        this.panaderiasArrayList = panaderias;
-    }
-
-    List<Panaderias> panaderiasArrayList;
-
-    private void initializeData() {
-        panaderiasArrayList = new ArrayList<>();
-        //panaderias.add(new Panaderias(String Rname, String Rdescription, String address));
-        panaderiasArrayList.add(new Panaderias("Buen pan", "El mejor pan de la ciudad", "Centro comercial los molinos"));
-    }
 
 }
